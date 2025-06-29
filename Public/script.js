@@ -11,8 +11,17 @@ async function askGemini() {
       body: JSON.stringify({ prompt })
     });
 
-    const data = await res.json();
-    output.innerText = data.text;
+    const resText = await res.text();
+
+    try {
+      const data = JSON.parse(resText);
+      output.innerText = data.text || "⚠️ No response received.";
+    } catch (jsonErr) {
+      // The response wasn't valid JSON — likely an error page
+      output.innerText = `⚠️ Unexpected response:\n${resText}`;
+      console.error("Response was not JSON:", resText);
+    }
+
   } catch (error) {
     console.error("Gemini error:", error);
     output.innerText = "Something went wrong while generating the poem.";
