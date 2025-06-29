@@ -35,3 +35,5 @@ function sendWhatsApp() {
   const url = `https://wa.me/918000000000?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 }
+
+
