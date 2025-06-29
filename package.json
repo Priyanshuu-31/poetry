@@ -1,0 +1,11 @@
+{
+  "name": "gemini-vercel-app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "@google/genai": "^1.7.0"
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Blog</title>
+  <link rel=stylesheet href="styles.css">
+</head>
+
+<body>
+
+  <h1>Poetry & Me</h1>
+  <blockquote>"The wound is the place where the light enters you." <em>~Rumi</em></blockquote>
+
+  <p>Here are different sections on this blog page for you to explore: </p>
+  <nav>
+    <a href="#Welcome">Welcome</a>
+    <a href="#Content">Content</a>
+    <a href="#Favourite Themes">Favourite Themes</a>
+    <a href="#Poetry">Poetry</a>
+    <a href="#Posts">Posts</a>
+    <a href="#Contact Me">Contact Me</a>
+  </nav>
+
+  <section id="Welcome">
+    <h2>Welcome</h2>
+
+    <p>Hey, this is Priyanshu from India looking forward to his first blog page. I might post my poetry and quotes over
+      here </p>
+    <hr>
+  </section>
+
+  <section id="Content">
+    <h2>On Writing</h2>
+    <p>as I always say, <q>poetry begins where logic ends.</q></p>
+    <p>
+      sometimes, i write because it hurts. sometimes, because it heals.
+      but mostly, i write because some feelings don't have an emoji yet.
+    </p>
+    <p>
+      these lines aren't always polished. they're not meant to be.
+      they're raw, honest, and mostly scribbled at 2am with a tired soul and a hopeful heart.
+    </p>
+    <hr>
+  </section>
+
+  <section id="Favourite Themes">
+    <h2>Favorite Themes</h2>
+    <p><em>These are the emotions and elements I often weave into my words...</em></p>
+    <ul>
+      <li>Love & Longing</li>
+      <li>The Night Sky</li>
+      <li>Heartbreak & Healing</li>
+      <li>Time & Memory</li>
+      <li>Nature & Solitude</li>
+    </ul>
+    <hr>
+  </section>
+
+  <section id="Poetry">
+    <h2>Poetry</h2>
+    <p><b>Here goes my first poetry:</b></p>
+    <p>In hush of night, the moonlight spills, <br>
+      Like silver ink on window sills.<br>
+      The stars hum low, the wind walks light,<br>
+      And dreams take flight in velvet night.<br>
+
+      No need for maps, no need for signs,<br>
+      The heart remembers secret lines. <br>
+      So close your eyes and let it roam, <br>
+      Each star above will guide you home.</p>
+  </section>
+
+  <hr>
+
+  <section id="Posts">
+    <h2>Posts</h2>
+    <p>Here are few of my famous poetries posted on different social platforms:</p>
+    <img src="a.png" alt="Post 1" width="200">
+    <img src="b.png" alt="Post 2" width="200">
+    <img src="c.png" alt="Post 3" width="200">
+
+    <p>Refer to my instagram for more: <a href="https://www.instagram.com/the_bruisedsoul">Instagram</a></p>
+  </section>
+  <hr>
+
+  <section id="Contact Me">
+    <h2>Contact Me</h2>
+    <form>
+      <fieldset style="width: 400px;">
+        <legend>Contact Form</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" cols="40" name="message"></textarea>
+        <br><br>
+
+        <input type="submit" value="Send">
+      </fieldset>
+    </form>
+  </section>
+  <hr>
+  <script src="script.js"></script>
+
+  <section id="AskGemini">
+  <h2>💡 Ask Gemini for a Poem</h2>
+  <textarea id="geminiPrompt" placeholder="e.g. A poem about stars and silence" rows="4" cols="50"></textarea>
+  <br>
+  <button onclick="askGemini()">Generate</button>
+  <div id="geminiResponse" style="margin-top: 15px; white-space: pre-wrap;"></div>
+</section>
+
+  <section id="PoemRequest">
+    <h2>💬 Request a Custom Poem</h2>
+    <p>Want me to write a poem for you? Just type your theme and message me directly on WhatsApp!</p>
+
+    <input type="text" id="poemTopic" placeholder="e.g. Lost love, hope, the sea" style="width: 300px; padding: 8px;">
+    <button onclick="sendWhatsApp()" style="padding: 8px 12px; margin-left: 10px;">Send via WhatsApp</button>
+  </section>
+
+  <footer>
+    <p>&lt;&lt;&lt;&copy;Priyanshu Ajariwal&gt;&gt;&gt;</p>
+    <a href="#top">Back to Top</a>
+  </footer>
+</body>
+
+</html>

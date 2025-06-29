@@ -1,0 +1,203 @@
+/* ===== Light & Airy Poetry Theme ===== */
+:root {
+  /* Color Palette */
+  --ivory: #f9f7f5;
+  --parchment: #f0ebe3;
+  --soft-gray: #e0dcd3;
+  --dusty-rose: #d4a5a5;
+  --sage-green: #8a9b6e;
+  --ink: #3a3a3a;
+  --gold-accent: #c0a878;
+  
+  /* Fonts */
+  --font-main: 'Cormorant Garamond', serif;
+  --font-heading: 'Playfair Display', serif;
+  --font-decorative: 'Petit Formal Script', cursive;
+  
+  /* Spacing */
+  --section-padding: 1.5rem;
+  --element-margin: 0.8rem;
+}
+
+/* === Base Styles === */
+body {
+  font-family: var(--font-main);
+  line-height: 1.6;
+  color: var(--ink);
+  background: 
+    url('https://www.transparenttextures.com/patterns/cream-paper.png'),
+    var(--ivory);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+/* === Typography === */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--ink);
+  margin: 1.2rem 0 0.8rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--soft-gray);
+}
+
+h2 {
+  font-size: 1.8rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid var(--dusty-rose);
+}
+
+blockquote {
+  font-style: italic;
+  color: var(--ink);
+  padding: 1.2rem;
+  margin: 1.8rem 0;
+  background: var(--parchment);
+  border-left: 3px solid var(--sage-green);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* === Navigation === */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+nav a {
+  padding: 0.6rem 1.2rem;
+  color: var(--ink);
+  text-decoration: none;
+  border: 1px solid var(--soft-gray);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-family: var(--font-decorative);
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  background: var(--dusty-rose);
+  color: white;
+  border-color: var(--dusty-rose);
+}
+
+/* === Sections === */
+section {
+  margin-bottom: 2rem;
+  padding: var(--section-padding);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--soft-gray), transparent);
+  margin: 1.8rem 0;
+}
+
+/* === Lists === */
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.6rem;
+  position: relative;
+  list-style-type: none;
+}
+
+li::before {
+  content: "•";
+  color: var(--sage-green);
+  position: absolute;
+  left: -1rem;
+}
+
+/* === Poetry Section === */
+#Poetry p {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  white-space: pre-line;
+  padding: 1rem;
+  margin: 0.8rem 0;
+  background: var(--parchment);
+  border-left: 2px solid var(--gold-accent);
+}
+
+/* === Images === */
+img {
+  border-radius: 4px;
+  margin: 1rem 0;
+  max-width: 100%;
+  border: 1px solid var(--soft-gray);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* === Forms === */
+fieldset {
+  border: 1px solid var(--soft-gray);
+  border-radius: 6px;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  background: var(--parchment);
+}
+
+input, textarea {
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  background: white;
+  border: 1px solid var(--soft-gray);
+  color: var(--ink);
+  font-family: var(--font-main);
+}
+
+button {
+  background: var(--sage-green);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  margin-top: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-family: var(--font-heading);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--dusty-rose);
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--soft-gray);
+}
+
+footer a {
+  color: var(--sage-green);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
